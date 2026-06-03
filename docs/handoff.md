@@ -1,10 +1,8 @@
 # Handoff — DRN Tech site vitrine
 
-## Session du 2026-06-02
-
 ---
 
-## Ce qui a été fait
+## Session du 2026-06-02
 
 ### Infrastructure de base
 - `app/layout.tsx` — metadata DRN Tech, fond `bg-drn-bg`, polices Geist
@@ -15,56 +13,76 @@ Tous les composants suivants ont été créés dans `app/components/` :
 
 | Composant | Description |
 |---|---|
-| `Nav.tsx` | Header fixe, transparent → opaque au scroll. Toggle FR/EN visuel (non fonctionnel). Client component. |
+| `Nav.tsx` | Header fixe, transparent → opaque au scroll. Toggle FR/EN visuel (non fonctionnel à ce stade). Client component. |
 | `HeroSection.tsx` | Hero plein écran, accroche + 2 CTAs, fond avec grille SVG et glow centré |
 | `AboutBrief.tsx` | Présentation 2 colonnes, lien vers /about |
 | `OvocioHighlight.tsx` | Carte produit avec "Ovocio" en typographie large, 3 features, CTA |
 | `ServicesSection.tsx` | Grille 4 services (Mobile, SaaS, Websites, Automation), hover animé |
 | `Footer.tsx` | Adresse, email, liens légaux, copyright |
 
----
+### Pages créées (session 1)
+- `app/about/page.tsx` — 3 sections : hero, piliers, valeurs
+- `app/products/page.tsx` — hero intégré + card Ovocio + grille services
+- `app/products/ovocio/page.tsx` — hero 2 colonnes avec mockup, features, audiences, CTA closing
+- `app/contact/page.tsx` — email cliquable + localisation
 
-## Décisions prises
-
-### Contenu
-- **Pas de mention de statut juridique** sur le site (micro-entreprise non visible, sauf mentions légales obligatoires)
-- **Hero** : pas de localisation dans l'accroche principale
-- **About** : "Based on the French Riviera" (EN) — formulation choisie à la place de "based in Villefranche-sur-Mer"
-- **Footer** : "French Riviera, France" (et non ville précise)
-- **Ovocio** : nom affiché en grande typographie stylisée — pas de logo pour l'instant
-
-### Design
-- **Thème sombre** avec fond principal `#0A1628`
-- **Palette complète** documentée dans CLAUDE.md (voir section Palette de couleurs)
-- **Décoration Hero** : grille SVG + double glow centré horizontalement, large et diffus (premium)
-- Pas d'illustrations stock, pas d'emojis — typographie et formes géométriques uniquement
-
-### Architecture
-- Composants isolés, un par fichier, dans `app/components/`
-- Tailwind v4 — tokens personnalisés via `@theme` dans `globals.css` (classes : `bg-drn-bg`, `text-drn-accent`, etc.)
-- `Nav.tsx` est le seul client component sur la Home (nécessaire pour l'effet scroll)
+### Pages légales
+- `app/privacy-policy/page.tsx` — 6 sections RGPD, hébergeur Vercel, responsable DRN Technologies
+- `app/terms-of-service/page.tsx` — 5 sections, droit français, tribunal de Nice
 
 ---
 
-## Ce qui reste à faire
+## Session du 2026-06-03
 
-### Pages
-- [ ] `app/about/page.tsx` — Page About
-- [ ] `app/products/page.tsx` — Page Products (index)
-- [ ] `app/products/ovocio/page.tsx` — Page dédiée Ovocio
-- [ ] `app/contact/page.tsx` — Page Contact
-- [ ] `app/privacy-policy/page.tsx` — Politique de confidentialité
-- [ ] `app/terms-of-service/page.tsx` — Conditions générales
+### Système i18n FR/EN — complet
 
-### Fonctionnalités
-- [ ] **Menu mobile** — le `Nav.tsx` n'a pas encore de menu hamburger pour les petits écrans
-- [ ] **Système bilingue FR/EN** — le toggle est visuel uniquement ; aucune traduction n'est branchée
-- [ ] **Logo DRN Tech** — placeholder typographique en attendant le logo définitif
-- [ ] **Metadata SEO** par page (Open Graph, title/description spécifiques)
+Architecture choisie : **contexte React côté client**, sans routing i18n, sans `next-intl`. Les URLs ne changent pas. Le toggle FR/EN dans la Nav bascule la langue pour toute l'app instantanément.
 
-### Déploiement
-- [ ] Configurer le domaine `drn-tech.com` sur Vercel
-- [ ] Variables d'environnement si nécessaire
+Fichiers créés :
+
+| Fichier | Rôle |
+|---|---|
+| `messages/en.json` | Tout le contenu du site en anglais |
+| `messages/fr.json` | Tout le contenu du site en français |
+| `app/contexts/LanguageContext.tsx` | Contexte React + hook `useLanguage()` + persistance localStorage |
+| `app/components/Providers.tsx` | Wrapper client qui enveloppe le layout (permet à `layout.tsx` de rester server component) |
+
+Tous les composants et pages ont reçu `"use client"` et consomment `useLanguage()` :
+- Composants partagés : `Nav`, `Footer`, `HeroSection`, `AboutBrief`, `OvocioHighlight`, `ServicesSection`, `OvocioTeaser`, `ContactCta`
+- Pages : `about`, `products`, `products/ovocio`, `contact`, `privacy-policy`, `terms-of-service`
+
+### Persistance de la langue (localStorage)
+- Clé : `drn-lang`
+- Au montage (`useEffect`), on lit localStorage et on applique la langue sauvegardée
+- À chaque changement, on écrit dans localStorage
+- Langue par défaut : `en` (compatible SSR — pas de flash côté serveur)
+
+### Corrections de contenu fr.json
+- `home.services.label` → "Expertises"
+- `home.services.title` → "Ce que nous construisons"
+- Description "sites internet" harmonisée sur toutes les pages : "Des sites performants, simples à gérer et pensés pour durer."
+- `products.hero.title` → "Ce que nous construisons"
+- `products.hero.subtitle` → "Un produit. Des services. Tout pensé pour durer."
+- `about.pillars.label` → "Nos activités"
+- `about.pillars.items[0].description` → "facilité d'utilisation"
+- `about.values.label` → "Notre approche"
+- `about.values.title` → "Nos engagements"
+- `about.values.items[0]` → "L'utile avant tout" / "Chaque solution que nous créons répond à un problème concret."
+- `about.values.items[1]` → "Simple par nature" / "Un produit qui s'explique tout seul est un produit abouti."
+
+### Pages légales bilingues
+Les pages `/privacy-policy` et `/terms-of-service` sont désormais connectées au système i18n. Leur contenu est stocké dans `en.json` et `fr.json` sous les clés `privacy_policy` et `terms_of_service`, avec une structure `sections[]` (`title`, `body`, `link: boolean`). Le composant itère sur les sections et affiche le lien email en accent quand `link: true`.
+
+---
+
+## Décisions techniques
+
+- **Thème sombre** : fond principal `#0A1628`, accent argent bleuté `#B8CDE0`
+- **Tailwind v4** : tokens via `@theme` dans `globals.css` (pas de `tailwind.config.js`)
+- **i18n sans routing** : `typeof en` utilisé comme type `Messages` — TypeScript détecte toute clé manquante en FR
+- **Pas de mention micro-entreprise** sur le site (sauf mentions légales obligatoires)
+- **Footer** : "French Riviera, France" (EN) / "Côte d'Azur, France" (FR)
+- **Mockup Ovocio** : `public/images/ovocio/mockup.png` — à remplacer par le vrai screenshot
 
 ---
 
@@ -72,10 +90,26 @@ Tous les composants suivants ont été créés dans `app/components/` :
 
 | Page | État |
 |---|---|
-| Home | Terminée |
-| About | À faire |
-| Products | À faire |
-| Ovocio | À faire |
-| Contact | À faire |
-| Privacy Policy | À faire |
-| Terms of Service | À faire |
+| Home | Terminée — bilingue |
+| About | Terminée — bilingue |
+| Products | Terminée — bilingue |
+| Ovocio (`/products/ovocio`) | Terminée — bilingue |
+| Contact | Terminée — bilingue |
+| Privacy Policy | Terminée — bilingue |
+| Terms of Service | Terminée — bilingue |
+
+---
+
+## Ce qui reste à faire
+
+### Déploiement
+- [ ] **Pousser sur GitHub** — créer le repo distant et faire `git push`
+- [ ] **Connecter à Vercel** — importer le repo GitHub dans Vercel
+- [ ] **Configurer le domaine** `drn-tech.com` sur Vercel (DNS à pointer)
+
+### Fonctionnalités
+- [ ] **Menu mobile** — `Nav.tsx` a `hidden md:flex` pour les liens, pas de menu hamburger implémenté
+- [ ] **Logo DRN Tech** — placeholder typographique en attendant le logo définitif
+- [ ] **Metadata SEO par page** — Open Graph, `title` et `description` spécifiques à chaque route
+- [ ] **Vrai mockup Ovocio** — remplacer `public/images/ovocio/mockup.png` par le screenshot définitif
+- [ ] **Liens App Store / Google Play** — les boutons Ovocio pointent vers `#` pour l'instant
