@@ -1,0 +1,226 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title_line1": "Building tools",
+      "title_line2": "that work for you",
+      "subtitle": "DRN Tech designs and develops mobile apps, SaaS products, and automation solutions for businesses that value simplicity and efficiency.",
+      "cta_primary": "Discover Ovocio",
+      "cta_secondary": "Contact us"
+    },
+    "about_brief": {
+      "label": "About",
+      "title_line1": "A French tech company",
+      "title_line2": "with a focused approach",
+      "body": "DRN Tech is a French tech company based on the French Riviera. We design and develop digital products — from mobile apps to SaaS platforms — with a strong emphasis on usability, performance, and simplicity.",
+      "link": "Learn more"
+    },
+    "ovocio_highlight": {
+      "label": "Featured product",
+      "description": "The mobile app that turns your voice into professional quotes and invoices — instantly, on iOS and Android.",
+      "cta": "Learn more",
+      "features": [
+        { "label": "Voice-first", "description": "Create quotes and invoices by speaking naturally — no typing required." },
+        { "label": "Instant", "description": "Generate professional documents in seconds, directly from your phone." },
+        { "label": "Mobile", "description": "Designed for iOS and Android, built for on-the-go professionals." }
+      ]
+    },
+    "services": {
+      "label": "What we do",
+      "title": "Our expertise",
+      "items": [
+        { "title": "Mobile Apps", "description": "Native-quality iOS and Android applications built with React Native." },
+        { "title": "SaaS Products", "description": "Web-based software products designed for scale and simplicity." },
+        { "title": "Websites", "description": "Professional websites that are fast, accessible, and built to last." },
+        { "title": "Automation", "description": "Custom workflows and integrations that save time and reduce manual work." }
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "About",
+      "title": "DRN Tech was born from a simple conviction: technology should solve real problems.",
+      "body": "We build mobile apps and SaaS products for everyday users, custom tools integrated into businesses, and turnkey websites — always with the same goal: creating solutions that are useful, easy to use, and built to last."
+    },
+    "pillars": {
+      "label": "What we do",
+      "title": "Three areas of focus",
+      "items": [
+        { "title": "Apps & SaaS for everyone", "description": "We build mobile apps and SaaS products designed for everyday users — with a focus on real-world usefulness and ease of use." },
+        { "title": "Custom tools for businesses", "description": "We design and integrate tailored solutions built around your workflows, not the other way around." },
+        { "title": "Turnkey websites", "description": "Professional websites that are fast, easy to manage, and ready to grow with your business." }
+      ]
+    },
+    "values": {
+      "label": "How we work",
+      "title": "What we stand for",
+      "items": [
+        { "label": "Useful first", "description": "We only build what solves a real problem." },
+        { "label": "Truly simple", "description": "If it requires a manual, it is not finished yet." },
+        { "label": "Built to last", "description": "We design our products to adapt and evolve over time, not just to ship." }
+      ]
+    }
+  },
+  "products": {
+    "hero": {
+      "label": "Products",
+      "title": "What we make",
+      "subtitle": "One product. A set of services. All built to last."
+    },
+    "ovocio_card": {
+      "description": "The mobile app that turns your voice into professional quotes and invoices — in seconds, on iOS and Android.",
+      "features": ["Voice-to-document in seconds", "iOS & Android", "Professional PDF output"],
+      "cta": "Discover Ovocio"
+    },
+    "services": {
+      "label": "Services",
+      "title": "We also build to measure",
+      "items": [
+        { "title": "Custom mobile apps", "description": "We build tailor-made iOS and Android applications for businesses that need a specific solution — not a template." },
+        { "title": "Websites", "description": "We design and develop professional websites that are fast, easy to maintain, and built to grow with your business." },
+        { "title": "Automation & integrations", "description": "We build custom workflows and integrations to eliminate repetitive tasks and connect your tools." }
+      ],
+      "cta": "Get in touch"
+    }
+  },
+  "ovocio": {
+    "hero": {
+      "label": "Ovocio",
+      "title_line1": "Quotes and invoices,",
+      "title_line2": "created by voice.",
+      "description": "Ovocio is a mobile app for iOS and Android that turns what you say into professional documents — instantly, wherever you are.",
+      "cta_appstore": "App Store",
+      "cta_googleplay": "Google Play"
+    },
+    "features": {
+      "label": "Features",
+      "title": "Built for the field",
+      "items": [
+        { "title": "Create by voice", "description": "Dictate your quote or invoice naturally — Ovocio handles the structure, the formatting, and the math." },
+        { "title": "Ready in seconds", "description": "From spoken words to a professional document in under a minute. No typing, no back-office." },
+        { "title": "Always with you", "description": "Designed for mobile from the ground up. Open it on-site, in the car, or between two appointments." },
+        { "title": "Professional output", "description": "Clean, ready-to-send PDFs that look polished — every time, without effort." }
+      ]
+    },
+    "audiences": {
+      "label": "Who it's for",
+      "title": "Made for people on the move",
+      "items": [
+        { "title": "Freelancers & consultants", "description": "Stop losing time on admin. Create quotes between two calls and send invoices the moment the job is done." },
+        { "title": "Tradespeople & craftspeople", "description": "Quote on-site without paper. Your client gets a professional document before you've even left." },
+        { "title": "Sales reps & field teams", "description": "Keep moving. Turn a client conversation into a formal quote without ever opening a laptop." }
+      ]
+    },
+    "closing": {
+      "title": "Ready to try Ovocio?",
+      "subtitle": "Download it now on iOS or Android.",
+      "cta_appstore": "App Store",
+      "cta_googleplay": "Google Play"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "Contact",
+      "title": "Let's talk.",
+      "intro": "Have a project, a question, or just want to say hello — we're easy to reach."
+    },
+    "info": {
+      "email_label": "Email",
+      "location_label": "Location",
+      "location": "French Riviera, France"
+    }
+  },
+  "shared": {
+    "ovocio_teaser": {
+      "label": "Featured product",
+      "title": "Ovocio",
+      "description": "Create quotes and invoices by voice — instantly, on iOS and Android.",
+      "cta": "Learn more"
+    },
+    "contact_cta": {
+      "title": "Have a project in mind?",
+      "description": "Tell us what you need — we'll get back to you quickly.",
+      "cta": "Contact us"
+    }
+  },
+  "footer": {
+    "location": "French Riviera, France",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "privacy_policy": {
+    "label": "Legal",
+    "title": "Privacy Policy",
+    "updated": "Last updated: June 2026",
+    "sections": [
+      {
+        "title": "1. Data Controller",
+        "body": "This website is published by DRN Technologies, represented by Romain Dardinier.\nSIRET: 10575090500017\nAddress: 10 Avenue Darie la Madone, 06230 Villefranche-sur-Mer, France\nEmail: ",
+        "link": true
+      },
+      {
+        "title": "2. Data Collected",
+        "body": "This website does not collect any personal data. There is no contact form, no newsletter subscription, and no user account system. No personal information is requested from or stored about visitors.",
+        "link": false
+      },
+      {
+        "title": "3. Cookies",
+        "body": "This website does not use any tracking cookies, analytics cookies, or advertising cookies. No cookie banner is displayed because no cookies requiring consent are set.",
+        "link": false
+      },
+      {
+        "title": "4. Hosting & Technical Logs",
+        "body": "This website is hosted by Vercel Inc., 340 Pine Street Suite 701, San Francisco, CA 94104, USA. As part of normal server operations, Vercel may automatically collect technical logs (IP addresses, browser type, pages visited, timestamps). These logs are retained and processed by Vercel in accordance with their own privacy policy, available at vercel.com/legal/privacy-policy.",
+        "link": false
+      },
+      {
+        "title": "5. Your Rights (GDPR)",
+        "body": "In accordance with the General Data Protection Regulation (EU) 2016/679, you have the right to access, rectify, and request the deletion of any personal data concerning you. Since this website does not collect personal data directly, any such request would relate to technical logs held by the hosting provider. For any privacy-related inquiry, contact us at: ",
+        "link": true
+      },
+      {
+        "title": "6. Contact",
+        "body": "For any question regarding this privacy policy: ",
+        "link": true
+      }
+    ]
+  },
+  "terms_of_service": {
+    "label": "Legal",
+    "title": "Terms of Service",
+    "updated": "Last updated: June 2026",
+    "sections": [
+      {
+        "title": "1. Purpose",
+        "body": "These terms govern your use of the website drn-tech.com, published by DRN Technologies (SIRET: 10575090500017), represented by Romain Dardinier, 10 Avenue Darie la Madone, 06230 Villefranche-sur-Mer, France. This website is a purely informational showcase. No products or services are sold directly through this site.",
+        "link": false
+      },
+      {
+        "title": "2. Intellectual Property",
+        "body": "All content published on this website — including but not limited to text, graphics, logos, and the overall design — is the exclusive property of DRN Technologies, unless otherwise stated. Any reproduction, distribution, or use without prior written consent is strictly prohibited.",
+        "link": false
+      },
+      {
+        "title": "3. Limitation of Liability",
+        "body": "The information provided on this website is for general informational purposes only. DRN Technologies makes no warranties, express or implied, regarding the accuracy, completeness, or availability of the content. DRN Technologies shall not be held liable for any direct or indirect damages arising from the use of, or inability to use, this website.",
+        "link": false
+      },
+      {
+        "title": "4. Governing Law",
+        "body": "These terms are governed by French law. Any dispute relating to the use of this website shall be subject to the exclusive jurisdiction of the courts of Nice, France.",
+        "link": false
+      },
+      {
+        "title": "5. Contact",
+        "body": "For any question regarding these terms: ",
+        "link": true
+      }
+    ]
+  }
+}

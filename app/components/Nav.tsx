@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -29,38 +31,36 @@ export default function Nav() {
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
-          <Link
-            href="/"
-            className="text-white/70 hover:text-white text-sm transition-colors"
-          >
-            Home
+          <Link href="/" className="text-white/70 hover:text-white text-sm transition-colors">
+            {t.nav.home}
           </Link>
-          <Link
-            href="/about"
-            className="text-white/70 hover:text-white text-sm transition-colors"
-          >
-            About
+          <Link href="/about" className="text-white/70 hover:text-white text-sm transition-colors">
+            {t.nav.about}
           </Link>
-          <Link
-            href="/products"
-            className="text-white/70 hover:text-white text-sm transition-colors"
-          >
-            Products
+          <Link href="/products" className="text-white/70 hover:text-white text-sm transition-colors">
+            {t.nav.products}
           </Link>
-          <Link
-            href="/contact"
-            className="text-white/70 hover:text-white text-sm transition-colors"
-          >
-            Contact
+          <Link href="/contact" className="text-white/70 hover:text-white text-sm transition-colors">
+            {t.nav.contact}
           </Link>
         </div>
 
         <div className="flex items-center gap-2">
-          <button className="text-xs font-medium text-white/50 hover:text-white transition-colors px-1">
+          <button
+            onClick={() => setLanguage("fr")}
+            className={`text-xs font-medium transition-colors px-1 ${
+              language === "fr" ? "text-drn-accent" : "text-white/50 hover:text-white"
+            }`}
+          >
             FR
           </button>
           <span className="text-white/20 text-xs">|</span>
-          <button className="text-xs font-medium text-drn-accent hover:text-white transition-colors px-1">
+          <button
+            onClick={() => setLanguage("en")}
+            className={`text-xs font-medium transition-colors px-1 ${
+              language === "en" ? "text-drn-accent" : "text-white/50 hover:text-white"
+            }`}
+          >
             EN
           </button>
         </div>

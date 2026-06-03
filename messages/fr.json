@@ -1,0 +1,226 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "products": "Produits",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title_line1": "Des outils conçus",
+      "title_line2": "pour vous simplifier la vie",
+      "subtitle": "DRN Tech conçoit et développe des applications mobiles, des produits SaaS et des solutions d'automatisation pour les entreprises qui valorisent la simplicité et l'efficacité.",
+      "cta_primary": "Découvrir Ovocio",
+      "cta_secondary": "Nous contacter"
+    },
+    "about_brief": {
+      "label": "À propos",
+      "title_line1": "Une entreprise tech française",
+      "title_line2": "avec une approche ciblée",
+      "body": "DRN Tech est une entreprise tech française basée sur la Côte d'Azur. Nous concevons et développons des produits numériques — des applications mobiles aux plateformes SaaS — en mettant l'accent sur l'utilisabilité, la performance et la simplicité.",
+      "link": "En savoir plus"
+    },
+    "ovocio_highlight": {
+      "label": "Produit phare",
+      "description": "L'application mobile qui transforme votre voix en devis et factures professionnels — instantanément, sur iOS et Android.",
+      "cta": "En savoir plus",
+      "features": [
+        { "label": "Vocal", "description": "Créez vos devis et factures en dictant naturellement — sans saisir le moindre caractère." },
+        { "label": "Instantané", "description": "Générez des documents professionnels en quelques secondes, directement depuis votre téléphone." },
+        { "label": "Mobile", "description": "Conçu pour iOS et Android, pensé pour les professionnels en déplacement." }
+      ]
+    },
+    "services": {
+      "label": "Expertises",
+      "title": "Ce que nous construisons",
+      "items": [
+        { "title": "Applications mobiles", "description": "Des applications iOS et Android de qualité native, développées avec React Native." },
+        { "title": "Produits SaaS", "description": "Des logiciels web conçus pour évoluer, simples à prendre en main." },
+        { "title": "Sites internet", "description": "Des sites performants, simples à gérer et pensés pour durer." },
+        { "title": "Automatisation", "description": "Des workflows sur mesure et des intégrations pour gagner du temps et réduire les tâches manuelles." }
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "À propos",
+      "title": "DRN Tech est née d'une conviction simple : la technologie doit résoudre des problèmes réels.",
+      "body": "Nous concevons des applications mobiles et des produits SaaS destinés au grand public, des outils sur mesure intégrés dans les entreprises, et des sites web clé en main — toujours avec le même objectif : créer des solutions utiles, simples à utiliser, et pensées pour durer."
+    },
+    "pillars": {
+      "label": "Nos activités",
+      "title": "Trois domaines d'expertise",
+      "items": [
+        { "title": "Apps & SaaS grand public", "description": "Nous créons des applications mobiles et des produits SaaS conçus pour les utilisateurs du quotidien — avec une attention particulière portée à l'utilité réelle et à la facilité d'utilisation." },
+        { "title": "Outils sur mesure pour les entreprises", "description": "Nous concevons et intégrons des solutions adaptées à vos processus, pas l'inverse." },
+        { "title": "Sites web clé en main", "description": "Des sites performants, simples à gérer et pensés pour durer." }
+      ]
+    },
+    "values": {
+      "label": "Notre approche",
+      "title": "Nos engagements",
+      "items": [
+        { "label": "L'utile avant tout", "description": "Chaque solution que nous créons répond à un problème concret." },
+        { "label": "Simple par nature", "description": "Un produit qui s'explique tout seul est un produit abouti." },
+        { "label": "Pensé pour durer", "description": "Nos produits sont conçus pour s'adapter et évoluer dans le temps, pas seulement pour être livrés." }
+      ]
+    }
+  },
+  "products": {
+    "hero": {
+      "label": "Produits",
+      "title": "Ce que nous construisons",
+      "subtitle": "Un produit. Des services. Tout pensé pour durer."
+    },
+    "ovocio_card": {
+      "description": "L'application mobile qui transforme votre voix en devis et factures professionnels — en quelques secondes, sur iOS et Android.",
+      "features": ["Devis et factures à la voix", "iOS & Android", "Export PDF professionnel"],
+      "cta": "Découvrir Ovocio"
+    },
+    "services": {
+      "label": "Services",
+      "title": "On construit aussi sur mesure",
+      "items": [
+        { "title": "Applications mobiles sur mesure", "description": "Nous développons des applications iOS et Android adaptées aux entreprises qui ont besoin d'une solution spécifique — pas d'un template." },
+        { "title": "Sites internet", "description": "Nous concevons et développons des sites performants, simples à gérer et pensés pour durer." },
+        { "title": "Automatisation & intégrations", "description": "Nous créons des workflows sur mesure et des intégrations pour éliminer les tâches répétitives et connecter vos outils." }
+      ],
+      "cta": "Nous contacter"
+    }
+  },
+  "ovocio": {
+    "hero": {
+      "label": "Ovocio",
+      "title_line1": "Devis et factures,",
+      "title_line2": "créés à la voix.",
+      "description": "Ovocio est une application mobile iOS et Android qui transforme ce que vous dites en documents professionnels — instantanément, où que vous soyez.",
+      "cta_appstore": "App Store",
+      "cta_googleplay": "Google Play"
+    },
+    "features": {
+      "label": "Fonctionnalités",
+      "title": "Conçu pour le terrain",
+      "items": [
+        { "title": "Créez à la voix", "description": "Dictez votre devis ou facture naturellement — Ovocio gère la structure, la mise en forme et les calculs." },
+        { "title": "Prêt en quelques secondes", "description": "Des mots parlés au document professionnel en moins d'une minute. Sans saisie, sans back-office." },
+        { "title": "Toujours avec vous", "description": "Conçu pour mobile dès le départ. Ouvrez-le sur place, en voiture ou entre deux rendez-vous." },
+        { "title": "Rendu professionnel", "description": "Des PDF propres, prêts à envoyer, soignés — à chaque fois, sans effort." }
+      ]
+    },
+    "audiences": {
+      "label": "Pour qui",
+      "title": "Pensé pour les gens en mouvement",
+      "items": [
+        { "title": "Freelances & consultants", "description": "Arrêtez de perdre du temps sur l'administratif. Créez des devis entre deux appels et envoyez vos factures dès la mission terminée." },
+        { "title": "Artisans & indépendants", "description": "Devisez sur place sans papier. Votre client reçoit un document professionnel avant même que vous soyez parti." },
+        { "title": "Commerciaux & équipes terrain", "description": "Restez en mouvement. Transformez une conversation client en devis formel sans jamais ouvrir un ordinateur." }
+      ]
+    },
+    "closing": {
+      "title": "Prêt à essayer Ovocio ?",
+      "subtitle": "Téléchargez-le maintenant sur iOS ou Android.",
+      "cta_appstore": "App Store",
+      "cta_googleplay": "Google Play"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "Contact",
+      "title": "Parlons-en.",
+      "intro": "Un projet, une question ou simplement envie de dire bonjour — on est faciles à joindre."
+    },
+    "info": {
+      "email_label": "Email",
+      "location_label": "Localisation",
+      "location": "Côte d'Azur, France"
+    }
+  },
+  "shared": {
+    "ovocio_teaser": {
+      "label": "Produit phare",
+      "title": "Ovocio",
+      "description": "Créez vos devis et factures à la voix — instantanément, sur iOS et Android.",
+      "cta": "En savoir plus"
+    },
+    "contact_cta": {
+      "title": "Un projet en tête ?",
+      "description": "Dites-nous ce dont vous avez besoin — on vous répond rapidement.",
+      "cta": "Nous contacter"
+    }
+  },
+  "footer": {
+    "location": "Côte d'Azur, France",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "rights": "Tous droits réservés."
+  },
+  "privacy_policy": {
+    "label": "Légal",
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : juin 2026",
+    "sections": [
+      {
+        "title": "1. Responsable du traitement",
+        "body": "Ce site est publié par DRN Technologies, représentée par Romain Dardinier.\nSIRET : 10575090500017\nAdresse : 10 Avenue Darie la Madone, 06230 Villefranche-sur-Mer, France\nEmail : ",
+        "link": true
+      },
+      {
+        "title": "2. Données collectées",
+        "body": "Ce site ne collecte aucune donnée personnelle. Il n'existe pas de formulaire de contact, d'inscription à une newsletter, ni de système de compte utilisateur. Aucune information personnelle n'est demandée ou enregistrée concernant les visiteurs.",
+        "link": false
+      },
+      {
+        "title": "3. Cookies",
+        "body": "Ce site n'utilise aucun cookie de suivi, cookie analytique ou cookie publicitaire. Aucun bandeau de cookies n'est affiché car aucun cookie nécessitant un consentement n'est déposé.",
+        "link": false
+      },
+      {
+        "title": "4. Hébergement & logs techniques",
+        "body": "Ce site est hébergé par Vercel Inc., 340 Pine Street Suite 701, San Francisco, CA 94104, USA. Dans le cadre du fonctionnement normal des serveurs, Vercel peut collecter automatiquement des logs techniques (adresses IP, type de navigateur, pages visitées, horodatage). Ces logs sont conservés et traités par Vercel conformément à leur propre politique de confidentialité, disponible à l'adresse vercel.com/legal/privacy-policy.",
+        "link": false
+      },
+      {
+        "title": "5. Vos droits (RGPD)",
+        "body": "Conformément au Règlement général sur la protection des données (UE) 2016/679, vous disposez d'un droit d'accès, de rectification et de suppression des données personnelles vous concernant. Ce site ne collectant pas directement de données personnelles, toute demande concernerait les logs techniques détenus par l'hébergeur. Pour toute question relative à la protection de vos données, contactez-nous à : ",
+        "link": true
+      },
+      {
+        "title": "6. Contact",
+        "body": "Pour toute question relative à cette politique de confidentialité : ",
+        "link": true
+      }
+    ]
+  },
+  "terms_of_service": {
+    "label": "Légal",
+    "title": "Conditions d'utilisation",
+    "updated": "Dernière mise à jour : juin 2026",
+    "sections": [
+      {
+        "title": "1. Objet",
+        "body": "Les présentes conditions régissent l'utilisation du site drn-tech.com, publié par DRN Technologies (SIRET : 10575090500017), représentée par Romain Dardinier, 10 Avenue Darie la Madone, 06230 Villefranche-sur-Mer, France. Ce site est un site vitrine à caractère purement informatif. Aucun produit ni service n'est vendu directement via ce site.",
+        "link": false
+      },
+      {
+        "title": "2. Propriété intellectuelle",
+        "body": "L'ensemble du contenu publié sur ce site — textes, graphismes, logos, design général — est la propriété exclusive de DRN Technologies, sauf mention contraire. Toute reproduction, diffusion ou utilisation sans autorisation écrite préalable est strictement interdite.",
+        "link": false
+      },
+      {
+        "title": "3. Limitation de responsabilité",
+        "body": "Les informations publiées sur ce site sont fournies à titre informatif uniquement. DRN Technologies ne garantit pas l'exactitude, l'exhaustivité ni la disponibilité du contenu. DRN Technologies ne pourra être tenue responsable de dommages directs ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser ce site.",
+        "link": false
+      },
+      {
+        "title": "4. Droit applicable",
+        "body": "Les présentes conditions sont régies par le droit français. Tout litige relatif à l'utilisation de ce site relève de la compétence exclusive des tribunaux de Nice, France.",
+        "link": false
+      },
+      {
+        "title": "5. Contact",
+        "body": "Pour toute question relative aux présentes conditions : ",
+        "link": true
+      }
+    ]
+  }
+}

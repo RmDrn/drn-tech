@@ -1,51 +1,31 @@
-const services = [
-  {
-    title: "Mobile Apps",
-    description:
-      "Native-quality iOS and Android applications built with React Native.",
-  },
-  {
-    title: "SaaS Products",
-    description:
-      "Web-based software products designed for scale and simplicity.",
-  },
-  {
-    title: "Websites",
-    description:
-      "Professional websites that are fast, accessible, and built to last.",
-  },
-  {
-    title: "Automation",
-    description:
-      "Custom workflows and integrations that save time and reduce manual work.",
-  },
-];
+"use client";
+
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function ServicesSection() {
+  const { t } = useLanguage();
+  const s = t.home.services;
+
   return (
     <section className="py-24 px-6 border-t border-white/8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-14">
           <p className="text-drn-accent text-xs font-medium tracking-[0.2em] uppercase mb-5">
-            What we do
+            {s.label}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Our expertise
+            {s.title}
           </h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {services.map((s) => (
+          {s.items.map((item) => (
             <div
-              key={s.title}
+              key={item.title}
               className="bg-drn-bg-secondary rounded-2xl p-7 border border-white/8 hover:border-drn-accent/20 hover:bg-drn-bg-tertiary transition-all duration-300 cursor-default"
             >
-              <h3 className="text-white font-semibold text-base mb-3">
-                {s.title}
-              </h3>
-              <p className="text-white/55 text-sm leading-relaxed">
-                {s.description}
-              </p>
+              <h3 className="text-white font-semibold text-base mb-3">{item.title}</h3>
+              <p className="text-white/55 text-sm leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>
