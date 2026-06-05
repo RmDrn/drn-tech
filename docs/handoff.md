@@ -100,16 +100,30 @@ Les pages `/privacy-policy` et `/terms-of-service` sont désormais connectées a
 
 ---
 
-## Ce qui reste à faire
+## Session du 2026-06-05
+
+### Liens stores Ovocio
+Remplacement de tous les `href="#"` sur la page `/products/ovocio` par les URLs définitives :
+- App Store : `https://apps.apple.com/fr/app/ovocio-devis-%C3%A0-la-voix/id6759789723`
+- Google Play : `https://play.google.com/store/apps/details?id=com.ovocio.app`
+Les 4 boutons (hero × 2 + closing CTA × 2) pointent désormais vers les stores, avec `target="_blank" rel="noopener noreferrer"`.
+
+### Style des boutons CTA closing — aligné sur le hero
+Le closing CTA de la page Ovocio avait un style inversé (fond accent) sans icônes. Harmonisé avec le hero :
+- Bouton App Store : `bg-white text-drn-bg hover:bg-drn-accent` + icône Apple SVG
+- Bouton Google Play : bordure `border-white/8`, hover discret + icône Google Play SVG
 
 ### Déploiement
-- [ ] **Pousser sur GitHub** — créer le repo distant et faire `git push`
-- [ ] **Connecter à Vercel** — importer le repo GitHub dans Vercel
-- [ ] **Configurer le domaine** `drn-tech.com` sur Vercel (DNS à pointer)
+- Repo GitHub créé et poussé (`main`)
+- Site déployé sur Vercel — URL Vercel active
+- Domaine `drn-tech.com` configuré (DNS pointé sur Vercel)
+
+---
+
+## Ce qui reste à faire
 
 ### Fonctionnalités
 - [ ] **Menu mobile** — `Nav.tsx` a `hidden md:flex` pour les liens, pas de menu hamburger implémenté
 - [ ] **Logo DRN Tech** — placeholder typographique en attendant le logo définitif
 - [ ] **Metadata SEO par page** — Open Graph, `title` et `description` spécifiques à chaque route
 - [ ] **Vrai mockup Ovocio** — remplacer `public/images/ovocio/mockup.png` par le screenshot définitif
-- [ ] **Liens App Store / Google Play** — les boutons Ovocio pointent vers `#` pour l'instant
